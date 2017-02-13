@@ -7,6 +7,6 @@ RUN apt-get update && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
-COPY confs/apparmor/java.conf /etc/apparmor/java.conf
+COPY confs/apparmor/java.conf /etc/apparmor.d/java.conf
 
 CMD ["/usr/bin/java"]
